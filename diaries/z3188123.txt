@@ -1,0 +1,48 @@
+Week 1
+- Get set up on Jira.
+- Brainstorm project ideas with team. Agree on Project 10.
+
+Week 2
+- Set up initial Jira epics corresponding to the rough stages of a proposed pipeline.
+- Worked with the team to brainstorm user stories related to those epics and plan
+out sprint 1.
+
+Week 3
+- Updated all the Jira user stories to be in the appropriate format "As a ... I'd
+like to ... so that ..."
+- Reallocated some work so that I focus on the Data Collection microservices in the
+first instance.
+- Connected Jira to Github
+
+Week 4
+- Completed the user story to collect data from yahoo finance
+- Completed the user story to import data from a custom csv file
+- Completed the user story to merge data from different sources on a list of common columns
+
+Week 5
+- Facilitated the retrospective, completed the submission
+- Created a separate channel in discord for the github bot
+
+Week 6
+- drafted the pipeline sorting logic
+- drafted the node parsing logic (convert frontend json to executable python code)
+- drafted a potential flow which parses a pipeline json received from the frontend and produces a sequence of python commands to execute it
+
+Week 7
+- completed the pipeline sorting logic and integrated into the backend server
+- updated some import microservices to comply with the new design of saving interim csv
+- found some examples of potential visualisation services to build in sprint 3
+
+Week 8
+- commenced work on the Project Report, setting up the outline and suggested sections, started user manual
+- took several screenshots of the completed application for use in the Report
+- completed description of Import microservices and Save + Import pipeline functionalities
+- described the challenge of which order to execute pipeline in
+
+Week 9
+- continued with the report
+- met with the team to prepare for the final demonstration
+
+Week 10
+- presented the introduction and conclusion of the project demonstration
+- completed more detailed installation instructions for the Report

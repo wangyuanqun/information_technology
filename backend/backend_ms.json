@@ -1,0 +1,404 @@
+{
+        "in": [
+            {
+                "id": 1,
+                "type": "in",
+                "fnname": "collection.import_csv.csv_importer",
+                "display": "CSV importer",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "pathname",
+                        "displayname": "Input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "outputname",
+                        "displayname": "Output file",
+                        "type": "str"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "type": "in",
+                "fnname": "collection.newsdata.retrieve_news",
+                "display": "Retrieve news",
+                "params":[
+                    {
+                        "pid": 1,
+                        "name": "ticker",
+                        "displayname": "Ticker",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "start_date",
+                        "displayname": "Start date",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "end_date",
+                        "displayname": "End date",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "output_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "type": "in",
+                "fnname": "collection.yahoo.stock_price",
+                "display": "Stock price",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "ticker",
+                        "displayname": "Ticker",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "start_date",
+                        "displayname": "Start date",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "end_date",
+                        "displayname": "End date",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "output_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    }
+                ]
+            }
+        ],
+        "proc": [
+            {
+                "id": 4,
+                "type": "proc",
+                "fnname": "process.handle_duplicates.drop_duplicates",
+                "display": "Drop duplicates",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "df",
+                        "displayname": "Input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "output_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "subset",
+                        "displayname": "Subset",
+                        "type": "list"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "keep",
+                        "displayname": "Keep",
+                        "type": "str"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "type": "proc",
+                "fnname": "process.handle_missing.main_missing_imputation",
+                "display": "Handle missing data",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "df",
+                        "displayname": "Input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "output_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "method",
+                        "displayname": "Method",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "exclude_cols",
+                        "displayname": "Exclude columns",
+                        "type": "list"
+                    },
+                    {
+                        "pid": 5,
+                        "name": "n_neighbors",
+                        "displayname": "Number of neighbors (method=knn)",
+                        "type": "int"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "type": "proc",
+                "fnname": "process.merge.merge",
+                "display": "Merge",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "df1",
+                        "displayname": "Input file 1",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "df2",
+                        "displayname": "Input file 2",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "output_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "merge_cols",
+                        "displayname": "Merge columns",
+                        "type": "list"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "type": "proc",
+                "fnname": "process.normalise.normalise_data",
+                "display": "Normalise data",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "df",
+                        "displayname": "Input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "output_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "exclude_cols",
+                        "displayname": "Exclude columns",
+                        "type": "list"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "p",
+                        "displayname": "First value in range",
+                        "type": "int"
+                    },
+                    {
+                        "pid": 5,
+                        "name": "q",
+                        "displayname": "Last value in range",
+                        "type": "int"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "type": "proc",
+                "fnname": "process.split_dataset.train_test_split",
+                "display": "Split dataset for training and testing",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "data",
+                        "displayname": "Input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "train_name",
+                        "displayname": "Output train file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "test_name",
+                        "displayname": "Output test file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "test_size",
+                        "displayname": "Test size",
+                        "type": "float"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "type": "proc",
+                "fnname": "automl.forecasting_ml.fit_arma",
+                "display": "fit ARMA",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "data",
+                        "displayname": "Input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "target_column",
+                        "displayname": "Target column",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "output_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "p",
+                        "displayname": "Order of AR",
+                        "type": "int"
+                    },
+                    {
+                        "pid": 5,
+                        "name": "q",
+                        "displayname": "Order of MA",
+                        "type": "int"
+                    },
+                    {
+                        "pid": 6,
+                        "name": "forecast_steps",
+                        "displayname": "Forecast learning horizon(days)",
+                        "type": "int"
+                    },
+                    {
+                        "pid": 7,
+                        "name": "pred_start_date",
+                        "displayname": "Start date for prediction",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 8,
+                        "name": "pred_end_date",
+                        "displayname": "End date for prediction",
+                        "type": "str"
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "type": "proc",
+                "fnname": "automl.intialise_model.initialise_model",
+                "display": "Fit TPOT",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "train",
+                        "displayname": "Train file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "test",
+                        "displayname": "Test file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "results_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 4,
+                        "name": "output_column",
+                        "displayname": "Column name of closing prices",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 5,
+                        "name": "profile",
+                        "displayname": "Profile",
+                        "type": "str"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "id": 11,
+                "type": "out",
+                "fnname": "visualisation.csv_to_html.csv_to_html",
+                "display": "CSV to HTML",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "input_file",
+                        "displayname": "Input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "output_name",
+                        "displayname": "Output file",
+                        "type": "str"
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "type": "out",
+                "fnname": "visualisation.graph.forecasting_visual",
+                "display": "forecasting visual",
+                "params": [
+                    {
+                        "pid": 1,
+                        "name": "df",
+                        "displayname": "Acutal input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 2,
+                        "name": "df_forecast",
+                        "displayname": "Forecast input file",
+                        "type": "str"
+                    },
+                    {
+                        "pid": 3,
+                        "name": "output_filename",
+                        "displayname": "Output file",
+                        "type": "str"
+                    }
+                ]
+            }
+        ]
+}

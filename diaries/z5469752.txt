@@ -1,0 +1,34 @@
+WEEK 1:
+	formed a team, established a platform for communication, discussed preferred projects.
+
+WEEK 2:
+	liaised with client, established a plan for the coming sprint and divided tasks to begin on the project and proposal.
+
+WEEK 3:
+	began work on the project proposal, wrote the project background and contributed some user stories representing new 
+	functionalities not offered by competitors in the problem space. 
+
+WEEK 4:
+	began work on a minimum viable demo for the autoML microservices planned in the final product.
+	finished a working demo for presentation in class.
+
+WEEK 5:
+	successfully demoed project in lab. Got together for a group development session and decided on the first draft of 
+	our pipeline architecture. Coded a sentiment analyser for further stock analysis and made further improvements to the machine learning model.
+
+WEEK 6:
+	met to discuss integration and to bring project back in line with the given specifications. I finalised work on the sentiment analyser.
+
+WEEK 7:
+	restructured the code to better match client specifications. reformatted the code to include type hints and doc strings
+	Met to organise the structure and content for our second demo.
+
+WEEK 8: 
+	Successfully completed project second demo, convened after to complete the retrospective and define tasks for the next sprint.
+
+WEEK 9:
+	Began work on the report alongside the final improvements to the program as integration is almost complete. 
+	Finalised pipelines in preparation for demonstration, organised as a team who will speak when and what for.
+
+WEEK 10:
+	completed final demo with good feedback. Finished writing the report for the final deliverable in this project.

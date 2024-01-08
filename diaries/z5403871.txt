@@ -1,0 +1,65 @@
+Week 1
+    Group formation, and name our group.
+    Deploy Jira site and create two tasks (Select Scrum Master and decide project).
+    Project priority lodgement and provide teammates skill sets.
+    Setup discord channel for communications.
+    Confirm the project by the week 2.
+
+Week 2
+    Confirm the project P10 with tutor.
+    Read through the project specific sent by the stakeholder.
+    Meeting with the stakeholder.
+    Background research on AutoML.
+    Meeting before sprint 1 for work allocation.
+    
+    <Tasks unfinished>
+        Project proposal
+        Background research on front-end and back-end integration
+
+Week 3
+    Completed project proposal
+    Designed storyboards and user stories
+    Clarified project specifications with project stakeholder 
+    Designed user interface and confirmed with teammates
+    Attended catch-up meeting with teaammates to align working progress
+
+    <Tasks unfinished>
+        Implement interface with first demo requirement
+
+Week 4
+    Setup front end project
+    Implemented pipeline raw data editor
+    Implemented pipeline iport microservice interface
+    Implemented pipeline design with interactive interface
+    Drafted data storage architecture
+    Attended catch-up meeting with teaammates to align working progress and prepare demo
+
+Week 5
+    Finished project demo
+    Attended retro demo A meeting
+    Attended in person catch up meeting 
+    Confirmed frontend and backend workflow    
+
+Week 6
+    Attended demo session with stakeholders
+    Attended catup meeting after the demo session
+    Added upload file flow
+    Added viewing uploaded file flow
+
+Week 7
+    Complete Pipeline Import / Export / Reset flow
+    Refine Pipeline result API handling
+    Implement visualization flow
+
+Week 8
+    Finished Demo B and attended retro B meeting
+    Tidy up UI code and testing entire pipline running
+    Attended in person catch up meeting
+
+Week 9
+    Attended in person catch up meeting
+    Frontend bug fixes and prepare pipeline for presentation
+
+Week 10
+    Finalized presentation
+    Completed project report

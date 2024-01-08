@@ -1,0 +1,52 @@
+- what was planned for the period since the last work diary entry.
+
+- what was finished.
+
+- what were the main technical and non-technical obstacles and how they were overcome (or what was tried and did not work).
+
+- what was not finished, why this happened, how this affects the overall project progress and what adjustments (if any) are needed so the success of the project is not endangered.
+
+- what is planned for the next period (e.g., next week).
+
+
+
+week 1
+
+Group formed and named. Selected Jake as Scrum Master. Created the Jira Site. Decided on the topic with other group members.
+
+Week 2
+
+As a team we decided to use Python for backend. In sprint 1, we split the work, I'll do some of the data collection and data processing part. In next week's lab, we will do the proposal, we think user stories and software architecture diagram are the main part to finish.
+
+Week 3
+
+After talking to Simon, we decide to work on separate micro services to avoid future extra work. I will work on data processing. We successfully connect jira to GitHub. We planned to finish the proposal this Thursday, and make micro services work independently in next week. I provide some user stories to the proposal, and successfully submit the proposal.
+
+Week4
+
+We agree on the basic structure of the project. I finish the draft of the drop duplicates and missing data for the first demo.
+
+week5
+
+We successfully demonstrate the first demo to the meontor. We did the retrospective at the same time of the first demo based on mentor's feedback as well as ourselves'. We also did a in-person group meeting at saturday. I worked on the backend server and pipeline handler on saturday.
+
+Week 6
+
+We changed our microservices' structures based on the feedback from the client. Making progress on project, I update the backend server by adding more APIs. We plan to finish the Sprint 2 by this week.
+
+week 7
+
+Connect backend server to the frontend by union the formats of json. And create a several more API endpoints. Adjust some features. I create  a new handler - import_service_handler, several new endpoints - all_services, uploadMS, delete_csv, delete_service, service_information, csv_information.
+
+week 8
+
+Update the pipeline handler with catching the exceptions. Update get_csv_information and delete_csv and download_file. And we get the pipeline working in a simple situation. Then should be able to demonstrate the pipeline to group members on Monday.
+
+week 9
+
+Since the project is close to the end, I just update the comments of all backend server related files to make a clear view about each
+function. And update minor changes when testing the frontend. Also helping with the project report.
+
+week 10
+
+In this week, we finished project report, final demonstration, and finalise the comments. I help writing parts of project, and demonstrate the process of creating a pipeline.

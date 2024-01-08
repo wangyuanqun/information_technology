@@ -1,0 +1,61 @@
+{
+    "services": [
+        {
+            "_uid": "MS1",
+            "name": "Yahoo Finance", // Display name, require internal mapping in py file
+            "type": "Input", // Input, Process, Output
+            "component": [
+                {
+                    "_uid" : "SP1", // Stage Property, render in backend, according to the order of the function declaration
+                    "name": "Yahoo Finance",
+                    "type": "String" // data type: string / number
+                }
+            ]
+        },
+        {
+            "_uid": "MS2",
+            "name": "CSV File", // Display name, require internal mapping in py file
+            "type": "Input", // Input, Process, Output
+            "component": []
+        },
+        {
+            "_uid": "MS2",
+            "name": "Data Cleansing - Duplicate Values", // Display name, require internal mapping in py file
+            "type": "Process", // Input, Process, Output
+            "component": [
+                {
+                    "_uid" : "SP1", // Stage Property, render in backend, according to the order of the function declaration
+                    "name": "Whitespace trimming",
+                    "type": "bool" // data type: string / number / bool
+                }
+            ]
+        },
+        {
+            "_uid": "MS3",
+            "name": "AutoML", // Display name, require internal mapping in py file
+            "type": "Process", // Input, Process, Output
+            "component": [
+                {
+                    "_uid" : "SP1", // Stage Property, render in backend, according to the order of the function declaration
+                    "name": "Accuracy",
+                    "type": "number" // data type: string / number / bool
+                },
+                {
+                    "_uid" : "SP2", // Stage Property, render in backend, according to the order of the function declaration
+                    "name": "Time",
+                    "type": "number" // data type: string / number / bool
+                },
+                {
+                    "_uid" : "SP3", // Stage Property, render in backend, according to the order of the function declaration
+                    "name": "Test Splitting",
+                    "type": "number" // data type: string / number / bool
+                },
+                {
+                    "_uid" : "SP4", // Stage Property, render in backend, according to the order of the function declaration
+                    "name": "Train Splitting",
+                    "type": "number" // data type: string / number / bool
+                }
+            ]
+        }
+    ]
+}

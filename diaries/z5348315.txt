@@ -1,0 +1,60 @@
+Week 1
+
+Create groups 
+Created Jira and initial tasks 
+A discord channel for informal communication and weekly meetings 
+Reading through the projects.
+
+Week 2
+
+Project 10 was picked and communicated to the tutor. 
+Understanding project specs and requirements. 
+Creating additional Jira tasks. 
+A meeting with the stakeholders. 
+Additional research on potential competitors. 
+
+
+Week 3
+Completed project proposal
+Designed architecture diagram
+Standup meeting with team members to receive updates 
+
+
+Week 4
+worked on the architecture diagram
+functionality for the ML was coded using python
+Alignment meeting with the team
+
+
+Week 5
+Completed project demo
+completed the retro
+Forecasting model and additional functionality
+
+Week 6 
+Demo for the client 
+Normalisation microservice 
+Forecasting ML microservice
+
+Week 7 
+Complete the forecasting model
+Plan the visualisation microservices 
+Prepare for the demo
+
+Week 8
+Complete visualisation microservices 
+Completed project demo B
+completed the retro B
+Integration of microservice modules to the main
+
+Week 9 
+Integration work 
+Coding the microservice.py file 
+Finalise the visualisation
+Code cleanup
+
+Week 10
+Final demo 
+Completing the report 
+Code cleanup
+
